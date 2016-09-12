@@ -1,0 +1,26 @@
+        <li> <%= link_to "Home", root_path %> </li>
+        <% if user_signed_in? %>
+        <li> <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %> </li>
+          <%= "Signed in as #{current_user.email}" %>
+        <% else %>
+          <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
+          <li> <%= link_to "Sign In", new_user_session_path %> </li>
+        <% end %>
+
+
+<%# <!DOCTYPE html> %>
+<%# <html> %>
+<%#   <head> %>
+<%#     <title>RailsAssessment</title> %>
+<%#     <%= csrf_meta_tags %1> %>
+
+<%#     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %1> %>
+<%#     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %1> %>
+<%#   </head> %>
+
+<%#   <body> %>
+<%#     <%= render 'layouts/header' %1> %>
+<%#     <%= yield %1> %>
+<%#   </body> %>
+<%# </html> %>
+
