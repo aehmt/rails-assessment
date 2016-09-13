@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
+//
+
+// $('button.close').click(function (e) {
+//   alert("lol");
+//   $('.alert').hide();
+// });
